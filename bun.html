@@ -20,42 +20,45 @@
 
   </head>
   <body data-word-spacing="false" data-furigana="true" data-furigana-on-hover="true" class="asbplayer-token-container" tabindex="-1">
-    <div id="jumpbuttons" class="bg5">
-      <a class="jumpbutton" href='#lesson-1'>1</a>
-      <a class="jumpbutton" href='#lesson-2'>2</a>
-      <a class="jumpbutton" href='#lesson-3'>3</a>
-      <a class="jumpbutton" href='#lesson-4'>4</a>
-      <a class="jumpbutton" href='#lesson-5'>5</a>
-      <a class="jumpbutton" href='#lesson-6'>6</a>
-      <a class="jumpbutton" href='#lesson-7'>7</a>
-      <a class="jumpbutton" href='#lesson-8'>8</a>
-      <a class="jumpbutton" href='#lesson-9'>9</a>
-      <a class="jumpbutton" href='#lesson-10'>10</a>
-    </div>
-    <div id="jumpbuttons" class="bg4">
-      <a class="jumpbutton" href='#lesson-11'>11</a>
-      <a class="jumpbutton" href='#lesson-12'>12</a>
-      <a class="jumpbutton" href='#lesson-13'>13</a>
-      <a class="jumpbutton" href='#lesson-14'>14</a>
-      <a class="jumpbutton" href='#lesson-15'>15</a>
-      <a class="jumpbutton" href='#lesson-16'>16</a>
-      <a class="jumpbutton" href='#lesson-17'>17</a>
-      <a class="jumpbutton" href='#lesson-18'>18</a>
-      <a class="jumpbutton" href='#lesson-19'>19</a>
-      <a class="jumpbutton" href='#lesson-20'>20</a>
-    </div>
-    <div id="jumpbuttons" class="bg3">
-      <a class="jumpbutton" href='#lesson-21'>21</a>
-      <a class="jumpbutton" href='#lesson-22'>22</a>
-      <a class="jumpbutton" href='#lesson-23'>23</a>
-      <a class="jumpbutton" href='#lesson-24'>24</a>
-      <a class="jumpbutton" href='#lesson-25'>25</a>
-      <a class="jumpbutton" href='#lesson-26'>26</a>
-      <a class="jumpbutton" href='#lesson-27'>27</a>
-      <a class="jumpbutton" href='#lesson-28'>28</a>
-      <a class="jumpbutton" href='#lesson-29'>29</a>
-      <a class="jumpbutton" href='#lesson-30'>30</a>
-    </div>
+	<a id="returnbutton" href="#jumpbuttons">上</a>
+	<div id="jumpbuttons">		
+		<div class="jumpbuttons bg5">
+		<a class="jumpbutton" href='#lesson-1'>1</a>
+		<a class="jumpbutton" href='#lesson-2'>2</a>
+		<a class="jumpbutton" href='#lesson-3'>3</a>
+		<a class="jumpbutton" href='#lesson-4'>4</a>
+		<a class="jumpbutton" href='#lesson-5'>5</a>
+		<a class="jumpbutton" href='#lesson-6'>6</a>
+		<a class="jumpbutton" href='#lesson-7'>7</a>
+		<a class="jumpbutton" href='#lesson-8'>8</a>
+		<a class="jumpbutton" href='#lesson-9'>9</a>
+		<a class="jumpbutton" href='#lesson-10'>10</a>
+		</div>
+		<div class="jumpbuttons bg4">
+		<a class="jumpbutton" href='#lesson-11'>11</a>
+		<a class="jumpbutton" href='#lesson-12'>12</a>
+		<a class="jumpbutton" href='#lesson-13'>13</a>
+		<a class="jumpbutton" href='#lesson-14'>14</a>
+		<a class="jumpbutton" href='#lesson-15'>15</a>
+		<a class="jumpbutton" href='#lesson-16'>16</a>
+		<a class="jumpbutton" href='#lesson-17'>17</a>
+		<a class="jumpbutton" href='#lesson-18'>18</a>
+		<a class="jumpbutton" href='#lesson-19'>19</a>
+		<a class="jumpbutton" href='#lesson-20'>20</a>
+		</div>
+		<div class="jumpbuttons bg3">
+		<a class="jumpbutton" href='#lesson-21'>21</a>
+		<a class="jumpbutton" href='#lesson-22'>22</a>
+		<a class="jumpbutton" href='#lesson-23'>23</a>
+		<a class="jumpbutton" href='#lesson-24'>24</a>
+		<a class="jumpbutton" href='#lesson-25'>25</a>
+		<a class="jumpbutton" href='#lesson-26'>26</a>
+		<a class="jumpbutton" href='#lesson-27'>27</a>
+		<a class="jumpbutton" href='#lesson-28'>28</a>
+		<a class="jumpbutton" href='#lesson-29'>29</a>
+		<a class="jumpbutton" href='#lesson-30'>30</a>
+		</div>
+	</div>
     <div id="__next">
         <main class="flex grow flex-col justify-between">
           <div class="relative">
@@ -19151,7 +19154,7 @@
     ul > li > ul > li {
       margin-left: 1px !important;
       margin-top: 1px !important;
-      width: 49vw !important;
+      width: 45vw !important;
       height: 120px !important;
       outline: 1px lightgrey dotted !important;
       outline-offset: 0px !important;
@@ -19342,22 +19345,36 @@
 		padding: 0 2px;
 	}
 
-	#jumpbuttons{
+	#returnbutton{
+		position: fixed;
+		outline: 2px solid black;
+		border-radius: 100px;
+		width: 70px;
+		height: 70px;
+		line-height: 74px;
+		font-size: 40px;
+		text-align: center;
+		bottom: 5px;
+		right: 5px;
+	}
+
+	.jumpbuttons{
 		display: flex;
 		width: 100vw;
 		flex-wrap: wrap;
 	}
 
 	.jumpbutton{
-		height: 50px;
+		height: 70px;
+		line-height: 70px;
+		border-radius: 10px;
 		display: block;
-		width: 100px;
+		width: 18vw;
 		outline: 1px black solid !important;
-		margin: 10px;
+		margin: 10px 1vw;
 		text-align: center;
 		font-size: 30px;
 		font-weight: bold;
-		line-height: 50px;
 		padding: 0 !important;
 	}
   </style>
