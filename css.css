@@ -15524,3 +15524,298 @@
     transform: translate(0);
   }
 }
+
+    @media print {
+      div {
+        break-inside: avoid;
+      }
+      article > header {
+        break-after: page;
+      }
+    }
+	body{
+		background-color: white !important;
+		overflow-x: hidden;
+	}
+    main {
+      background-color: #00000000 !important;
+	  max-width: 900px;
+    }
+    * {
+      font-family: "UD Digi Kyokasho NK-R" !important;
+      color: inherit !important;
+      background-color: inherit !important;
+      background: inherit !important;
+    }
+    div > ul {
+      /* background-color: white; */
+      background-color: #00000000 !important;
+      gap: 0 !important;
+    }
+    article {
+      border-radius: 0 !important;
+      display: inline !important;
+      border: none !important;
+    }
+    ul, 
+    .grid {
+      display: inline !important;
+    }
+    div > a {
+      padding: 1rem !important;
+      outline: none !important;
+    }
+    div.grid {
+      padding: 0 !important;
+    }
+    a svg, 
+    #floating-portal-header, 
+    .bg-subheader, 
+    header, 
+    footer {
+      display: none !important;
+    }
+
+    ul > li > ul {
+      /* display: flex; */
+      /* flex-wrap: wrap; */
+      gap: 1px !important;
+      padding: 0 !important;
+    }
+
+    ul > li > ul > li {
+      margin-left: 1px !important;
+      margin-top: 1px !important;
+      width: 100vw !important;
+      height: 240px !important;
+      outline: 1px lightgrey dotted !important;
+      outline-offset: 0px !important;
+      /* background-color: white; */
+      background-color: #00000000 !important;
+      border-radius: 0 !important;
+      float: left !important;
+      overflow: hidden !important;
+    }
+    ul > li > ul > li * {
+      background-color: #00000000 !important;
+    }
+
+    div
+      > ul
+      > li:not(:nth-of-type(1))
+      > article
+      > ul
+      > li:nth-of-type(1)
+      > ul:nth-of-type(1)::before {
+      content: "" !important;
+      width: 885px !important;
+      height: 101px !important;
+      /* outline: 2px black dotted;
+  outline-offset: -1px; */
+      /* background-color: black; */
+      background-color: #00000000 !important;
+      border-radius: 0 !important;
+      float: left !important;
+      overflow: hidden !important;
+    }
+
+	div>ul>li:nth-of-type(2)>article>ul>li:nth-of-type(1)>ul:nth-of-type(1)::before{
+	  height: 700px !important;
+	}
+	div>ul>li:nth-of-type(3)>article>ul>li:nth-of-type(1)>ul:nth-of-type(1)::before{
+	  height: 300px !important;
+	}
+	div>ul>li:nth-of-type(4)>article>ul>li:nth-of-type(1)>ul:nth-of-type(1)::before{
+	  height: 400px !important;
+	}
+	div>ul>li:nth-of-type(5)>article>ul>li:nth-of-type(1)>ul:nth-of-type(1)::before{
+	  height: 400px !important;
+	}
+
+    .ContentTag > span {
+      color: inherit !important;
+      font-weight: normal !important;
+      font-family: "UD Digi Kyokasho NK-R" !important;
+    }
+
+    .ContentTag {
+      position: absolute !important;
+      top: 100px !important;
+      right: -26px !important;
+      text-align: right !important;
+      width: 180px !important;
+      height: 50px !important;
+      overflow: hidden !important;
+      rotate: 90deg !important;
+      font-weight: bold !important;
+      background-color: #00000000 !important;
+      font-size: 50px !important;
+    }
+    .ContentTag > b {
+      font-size: 28px !important;
+      font-weight: normal !important;
+    }
+    .ContentTag > x {
+      font-weight: normal !important;
+		font-size: 20px !important;
+		color: gray !important;
+    }
+    a {
+      overflow: hidden !important;
+    }
+    main > div > div > ul > li a::before {
+      font-family: "UD Digi Kyokasho NK-B" !important;
+      position: absolute !important;
+      font-size: 24px !important;
+      /* width: 30px; */
+      text-align: center !important;
+      line-height: 32px !important;
+
+      padding: 40px 100px 0px 100px !important;
+      /* padding-bottom: 5px; */
+      right: -80px !important;
+      top: -30px !important;
+      transform: rotate(25deg) !important;
+      z-index: -1 !important;
+      outline: 1px solid !important;
+    }
+    main > div > div > ul > li:nth-of-type(1) a::before, .bg5 > a{
+      content: "N5" !important;
+      background-color: #f4cccc !important;
+    }
+    main > div > div > ul > li:nth-of-type(2) a::before, .bg4 > a {
+      content: "N4" !important;
+      background-color: #fce5cd !important;
+    }
+    main > div > div > ul > li:nth-of-type(3) a::before, .bg3 > a {
+      content: "N3" !important;
+      background-color: #d9ead3 !important;
+    }
+    main > div > div > ul > li:nth-of-type(4) a::before, .bg2 > a {
+      content: "N2" !important;
+      background-color: #cfe2f3 !important;
+    }
+    main > div > div > ul > li:nth-of-type(5) a::before, .bg1 > a {
+      content: "N1" !important;
+      background-color: #d9d2e9 !important;
+    }
+    main > div > div > ul > li:nth-of-type(6) a::before {
+      content: "Other" !important;
+      background-color: #eeeeee !important;
+    }
+
+    main > div > div > ul > li a::before, 
+    main > div > div > ul > li .ContentTag {
+      color: black !important;
+    }
+
+    .pr-44 > div.line-clamp-1 {
+      overflow: visible !important;
+      -webkit-line-clamp: 2 !important;
+      line-clamp: 2 !important;
+      min-height: 80px;
+    }
+
+    .pr-44 > ul {
+      margin: 0 !important;
+      display: inline !important;
+    }
+
+    .pr-44 {
+      padding-top: 24px !important;
+      padding-right: 24px !important;
+      display: block !important;
+      overflow: hidden !important;
+      /* position:relative; */
+    }
+
+    h4 {
+      font-family: "UD Digi Kyokasho NK-B" !important;
+      /* font-weight: bold; */
+      font-size: 60px !important;
+      z-index: 5 !important;
+      position: relative !important;
+	      line-height: 80px !important;
+    }
+	i{
+		font-style: normal !important;
+	}
+    h4 i {
+      font-size: 60px !important;
+      font-style: normal !important;
+      color: #444 !important;
+    }
+
+    h4 b {
+      color: #bbb !important;
+      /* font-size: 18px; */
+    }
+
+    .pr-44 > div::after, 
+    .line-clamp-1 > p {
+      position: absolute !important;
+      display: block !important;
+      top: 8px !important;
+      font-size: 24px !important;
+      left: 5px !important;
+      /* margin: 0; */
+      color: #555 !important;
+    }
+
+    .pr-44 > p {
+      -webkit-line-clamp: 3 !important;
+      line-clamp: 3 !important;
+      font-size: 24px !important;
+      line-height: 32px !important;
+    }
+	
+    .pr-44 > p > i{
+      color: #bbb !important;
+    }
+	
+	.emoji{
+		font-family: "Noto Emoji" !important;
+	}
+	
+	p.text-secondary-fg>b{		
+		font-weight: 900;
+		outline: dotted 1px;
+		padding: 0 2px;
+	}
+
+	#returnbutton{
+		position: fixed;
+		background-color: white;
+		outline: 2px solid black;
+		border-radius: 100px;
+		
+		width: 120px;
+		height: 120px;
+		line-height: 120px;
+
+		font-size: 40px;
+		text-align: center;
+		bottom: 5px;
+		right: 5px;
+    z-index: 999;
+	}
+
+	.jumpbuttons{
+		display: flex;
+		width: 100vw;
+		flex-wrap: wrap;
+	}
+
+	.jumpbutton{
+		height: 100px;
+		line-height: 100px;
+		border-radius: 10px;
+		display: block;
+		width: 18vw;
+		outline: 1px black solid !important;
+		margin: 10px 1vw;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		padding: 0 !important;
+	}
