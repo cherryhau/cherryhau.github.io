@@ -10650,8 +10650,8 @@
       > li:nth-of-type(1)
       > ul:nth-of-type(1)::before {
       content: "" !important;
-      width: 885px !important;
-      height: 101px !important;
+      width: 100vw !important;
+      height: 100px !important;
       /* outline: 2px black dotted;
   outline-offset: -1px; */
       /* background-color: black; */
