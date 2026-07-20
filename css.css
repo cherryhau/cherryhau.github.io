@@ -10579,8 +10579,11 @@
       background-color: #00000000 !important;
 	  max-width: 900px;
     }
+
+    @font-face { font-family: udnkr; src: url('UDDigiKyokashoNK-R-03.ttf'); }
+
     * {
-      font-family: "UD Digi Kyokasho NK-R" !important;
+      font-family: "udnkr, UD Digi Kyokasho NK-R" !important;
       color: inherit !important;
       background-color: inherit !important;
       background: inherit !important;
@@ -10867,4 +10870,8 @@
     transform: scale(1.1);
     transition: .02s;
     outline: 5px black double !important;
+  }
+
+  #n2set, #n1set{
+    display: none;
   }
