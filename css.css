@@ -10661,7 +10661,7 @@
       overflow: hidden !important;
     }
 
-	div>ul>li:nth-of-type(2)>article>ul>li:nth-of-type(1)>ul:nth-of-type(1)::before{
+	/* div>ul>li:nth-of-type(2)>article>ul>li:nth-of-type(1)>ul:nth-of-type(1)::before{
 	  height: 700px !important;
 	}
 	div>ul>li:nth-of-type(3)>article>ul>li:nth-of-type(1)>ul:nth-of-type(1)::before{
@@ -10672,7 +10672,7 @@
 	}
 	div>ul>li:nth-of-type(5)>article>ul>li:nth-of-type(1)>ul:nth-of-type(1)::before{
 	  height: 400px !important;
-	}
+	} */
 
     .ContentTag > span {
       color: inherit !important;
