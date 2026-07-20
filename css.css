@@ -10581,9 +10581,10 @@
     }
 
     @font-face { font-family: udnkr; src: url('UDDigiKyokashoNK-R-03.ttf'); }
-
+    @font-face { font-family: noto; src: url('NotoEmoji-VariableFont_wght.ttf'); }
+    
     * {
-      font-family: "udnkr, UD Digi Kyokasho NK-R" !important;
+      font-family: "udnkr", "UD Digi Kyokasho NK-R" !important;
       color: inherit !important;
       background-color: inherit !important;
       background: inherit !important;
@@ -10676,7 +10677,7 @@
     .ContentTag > span {
       color: inherit !important;
       font-weight: normal !important;
-      font-family: "UD Digi Kyokasho NK-R" !important;
+      /* font-family: "udnkr", "UD Digi Kyokasho NK-R" !important; */
     }
 
     .ContentTag {
@@ -10705,7 +10706,7 @@
       overflow: hidden !important;
     }
     main > div > div > ul > li a::before {
-      font-family: "UD Digi Kyokasho NK-B" !important;
+      /* font-family: "UD Digi Kyokasho NK-B" !important; */
       position: absolute !important;
       font-size: 24px !important;
       /* width: 30px; */
@@ -10771,7 +10772,7 @@
     }
 
     h4 {
-      font-family: "UD Digi Kyokasho NK-B" !important;
+      /* font-family: "UD Digi Kyokasho NK-B" !important; */
       /* font-weight: bold; */
       font-size: 60px !important;
       z-index: 5 !important;
@@ -10815,7 +10816,7 @@
     }
 	
 	.emoji{
-		font-family: "Noto Emoji" !important;
+		font-family: "noto", "Noto Emoji" !important;
 	}
 	
 	p.text-secondary-fg>b{		
